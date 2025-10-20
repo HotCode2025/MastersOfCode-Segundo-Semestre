@@ -1,3 +1,4 @@
+#CLASE 5 POO Parte 1
 class Persona: #Creamos una clase
 
     def __init__(self, nombre, apellido, edad): # Se lo llama metodo Init Dunder
