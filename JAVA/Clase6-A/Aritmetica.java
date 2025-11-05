@@ -8,7 +8,7 @@ public class Aritmetica {
     int b;
     
     //El contructor es un metodo especial
-    public Aritmetica(){//Constructor 1
+    public Aritmetica (){//Constructor 1
             System.out.println("Se esta ejecutando este constructor numero uno");
     }
     //Estamos viendo lo que se llama sobrecarga de constructores
