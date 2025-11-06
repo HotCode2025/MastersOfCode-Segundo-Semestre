@@ -1,6 +1,6 @@
 <script setup>
 const nombreapelido= "juan perez";
-import HabilidadesComponente from './assets/components/HabilidadesComponente.vue';
+import HabilidadesComponente from './components/HabilidadesComponente.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import HabilidadesComponente from './assets/components/HabilidadesComponente.vue
   <main>
     <section id="habilidades">
             <!--Componente Habilidades-->
-            <h2>Habilidades</h2>
+            <h2>Habilidades del Equipo</h2>
             <HabilidadesComponente />
         </section>
   </main>
