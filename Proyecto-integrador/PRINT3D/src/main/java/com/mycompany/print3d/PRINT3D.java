@@ -76,5 +76,44 @@ public class PRINT3D {
         } 
  
         int codigo = Integer.parseInt(codigoStr);
+
+        switch (codigo) { case 5500 -> { nuevoCosto = 0; System.out.println("Has ingresado el codigo postal de Capital"); } case 5501 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Godoy Cruz"); } case 5521 -> { nuevoCosto = 3000; System.out.println("Has ingresado el codigo postal de Guaymallén"); } case 5539 -> { nuevoCosto = 3000; System.out.println("Has ingresado el codigo postal de Las Heras"); } case 5507 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Luján de Cuyo"); } case 5515 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Maipú"); } case 5620 -> { System.out.println("Has ingresado el codigo postal de General Alvear"); nuevoCosto = 7000; } case 5570 -> { System.out.println("Has ingresado el codigo postal de Junín"); nuevoCosto = 7000; } case 5590 -> { System.out.println("Has ingresado el codigo postal de La Paz"); nuevoCosto = 7000; }
+        case 5531 -> {
+            System.out.println("Has ingresado el codigo postal de Lavalle");
+            nuevoCosto = 5000;
+        }
+        case 5613 -> {
+            System.out.println("Has ingresado el codigo postal de Malargüe");
+            nuevoCosto = 9000;
+        }
+        case 5577 -> {
+            System.out.println("Has ingresado el codigo postal de Rivadavia");
+            nuevoCosto = 5000;
+        }
+        case 5569 -> {
+            System.out.println("Has ingresado el codigo postal de San Carlos");
+            nuevoCosto = 7000;
+        }
+        case 5571 -> {
+            System.out.println("Has ingresado el codigo postal de San Martin");
+            nuevoCosto = 7000;
+        }
+        case 5600 -> {
+            System.out.println("Has ingresado el codigo postal de San Rafael");
+            nuevoCosto = 8000;
+        }
+        case 5584 -> {
+            System.out.println("Has ingresado el codigo postal de Santa Rosa");
+            nuevoCosto = 8000;
+        }
+        case 5560 -> {
+            System.out.println("Has ingresado el codigo postal de Tunuyán");
+            nuevoCosto = 7000;
+        }
+        case 5561 -> {
+            System.out.println("Has ingresado el codigo postal de Tupungato");
+            nuevoCosto = 6500;
+        }
+    }
 }
 
