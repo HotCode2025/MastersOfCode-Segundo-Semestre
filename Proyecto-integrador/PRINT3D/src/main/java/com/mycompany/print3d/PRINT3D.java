@@ -27,6 +27,18 @@ public class PRINT3D {
         matriz[5][0] = 5560;
         matriz[5][1] = 5560;
         matriz[5][2] = 5561;
+        
+        int costoDeEnvio = elegirCodigoPostal(matriz);
+
+        String[][] matrizProductos = new String[1][6];
+        matrizProductos[0][0] = "1-Impresora 3D Ender 3 pro + 1KG de filamento $450.000";
+        matrizProductos[0][1] = "2-Impresora 3D Ender 3 + 1KG de filamento $380.000";
+        matrizProductos[0][2] = "3-Impresora 3D Bambulab A1 + 4KG de filamento $1.750.000";
+        matrizProductos[0][3] = "4-Impresora 3D Bambulab H2d Ams doble extrusor + 4KG de filamento $6.300.000";
+        matrizProductos[0][4] = "5-Impresora 3D Bambulab a1 mini + 1KG de filamento $600.000";
+        matrizProductos[0][5] = "6-Filamento impresion 3d x 10KG $240.000";
+
+        int precioDelProducto = agregarProducto(matrizProductos);
     }
     
     
@@ -65,3 +77,4 @@ public class PRINT3D {
  
         int codigo = Integer.parseInt(codigoStr);
 }
+
