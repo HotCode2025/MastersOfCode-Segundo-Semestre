@@ -28,4 +28,40 @@ public class PRINT3D {
         matriz[5][1] = 5560;
         matriz[5][2] = 5561;
     }
+    
+    
+    
+    
+    
+    public static int elegirCodigoPostal(int[][] matriz) { 
+    Scanner scanner = new Scanner(System.in); 
+    int costoDeEnvio = 0; 
+    boolean postal = false; 
+    String direc; 
+ 
+    // Inicializamos la matriz 
+    StringBuilder matrizTexto = new StringBuilder(); 
+    for (int i = 0; i < 3; i++) { 
+        for (int j = 0; j < 3; j++) { 
+            matrizTexto.append(matriz[i][j]).append(" "); 
+        } 
+        matrizTexto.append("\n"); 
+    } 
+ 
+    JOptionPane.showMessageDialog(null, 
+            "A continuación Ingrese un codigo postal de mendoza"); 
+ 
+ 
+ 
+ 
+    //Aca solicitamos el codigo postal con un ciclo WHILE 
+    while (!postal) { 
+        String codigoStr = JOptionPane 
+                .showInputDialog("Digite el código postal donde vive: "); 
+        int nuevoCosto = -1; 
+        if (codigoStr == null) { 
+            mostrarMensajeDespedida(); 
+        } 
+ 
+        int codigo = Integer.parseInt(codigoStr);
 }
