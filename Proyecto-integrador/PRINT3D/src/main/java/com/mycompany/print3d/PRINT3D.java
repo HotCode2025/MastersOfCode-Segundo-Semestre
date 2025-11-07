@@ -1,6 +1,9 @@
 
 package com.mycompany.print3d;
 
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
 public class PRINT3D {
 
     public static void main(String[] args) {
@@ -76,8 +79,47 @@ public class PRINT3D {
         } 
  
         int codigo = Integer.parseInt(codigoStr);
+        
+        //aqui ponemos un switch para poder ver de que departamento es el codigo postal ingresado y su costo de envio
 
-        switch (codigo) { case 5500 -> { nuevoCosto = 0; System.out.println("Has ingresado el codigo postal de Capital"); } case 5501 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Godoy Cruz"); } case 5521 -> { nuevoCosto = 3000; System.out.println("Has ingresado el codigo postal de Guaymallén"); } case 5539 -> { nuevoCosto = 3000; System.out.println("Has ingresado el codigo postal de Las Heras"); } case 5507 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Luján de Cuyo"); } case 5515 -> { nuevoCosto = 4000; System.out.println("Has ingresado el codigo postal de Maipú"); } case 5620 -> { System.out.println("Has ingresado el codigo postal de General Alvear"); nuevoCosto = 7000; } case 5570 -> { System.out.println("Has ingresado el codigo postal de Junín"); nuevoCosto = 7000; } case 5590 -> { System.out.println("Has ingresado el codigo postal de La Paz"); nuevoCosto = 7000; }
+        switch (codigo){
+          case 5500 -> {System.out.println("Has ingresado el codigo postal de Capital"); 
+            nuevoCosto = 0;
+          } 
+        
+        
+        case 5501 -> { System.out.println("Has ingresado el codigo postal de Godoy Cruz");
+        nuevoCosto = 4000;
+        }
+        
+         case 5521 -> { System.out.println("Has ingresado el codigo postal de Guaymallén"); 
+         nuevoCosto = 3000;
+          } 
+        
+        case 5539 -> {  System.out.println("Has ingresado el codigo postal de Las Heras");            
+        nuevoCosto = 3000;
+        } 
+        
+        case 5507 -> {  System.out.println("Has ingresado el codigo postal de Luján de Cuyo");
+        nuevoCosto = 4000;
+        }
+        
+        case 5515 -> { System.out.println("Has ingresado el codigo postal de Maipú");
+            nuevoCosto = 4000;
+           } 
+        
+        case 5620 -> { System.out.println("Has ingresado el codigo postal de General Alvear"); 
+        nuevoCosto = 7000;
+        }
+        
+        case 5570 -> { System.out.println("Has ingresado el codigo postal de Junín");
+        nuevoCosto = 7000;
+        }
+        
+        case 5590 -> { System.out.println("Has ingresado el codigo postal de La Paz"); 
+        nuevoCosto = 7000;
+        }
+        
         case 5531 -> {
             System.out.println("Has ingresado el codigo postal de Lavalle");
             nuevoCosto = 5000;
@@ -113,7 +155,7 @@ public class PRINT3D {
         case 5561 -> {
             System.out.println("Has ingresado el codigo postal de Tupungato");
             nuevoCosto = 6500;
+             }
         }
-    }
 }
 
