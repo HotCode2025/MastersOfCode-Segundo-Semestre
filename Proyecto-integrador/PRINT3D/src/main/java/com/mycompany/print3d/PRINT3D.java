@@ -171,7 +171,7 @@ public class PRINT3D {
             break; 
         } 
     } 
-} 
+
 if (postal) { 
     System.out.println( 
             "Genial!!, digite su calle, casa y detalles para poder hacerle llegar su envio"); 
@@ -184,4 +184,60 @@ if (postal) {
  
 return costoDeEnvio;
 }
-
+    public static int agregarProducto(String[][] matrizProductos) { 
+    Scanner scanner = new Scanner(System.in); 
+    int precio = 0; 
+    boolean codigop = false; 
+    int precioProducto = -1; 
+    String nombre; 
+ 
+    StringBuilder matrizP = new StringBuilder(); 
+    for (int i = 0; i < matrizProductos.length; i++) { 
+        for (int j = 0; j < matrizProductos[i].length; j++) { 
+            matrizP.append(matrizProductos[i][j]).append("\n "); 
+        } 
+        matrizP.append("\n"); 
+    } 
+ 
+    // Solicitamos el producto mediante el ciclo while para asignar el precio al 
+producto. 
+     
+    while (!codigop) { 
+ 
+        String productoStr = JOptionPane 
+                .showInputDialog("Digite el producto que quiere \n" + matrizP.toString()); 
+        //por si se aprieta el boton de cancelar 
+        if (productoStr == null) { 
+            mostrarMensajeDespedida(); 
+        } 
+         
+        int producto = Integer.parseInt(productoStr); 
+ 
+        switch (producto) { 
+            case 1 -> { 
+                precioProducto = 450000; 
+                System.out.println("impresora 3D Ender 3 pro + 1kg de filamento"); 
+            } 
+            case 2 -> { 
+                precioProducto = 380000; 
+                System.out.println("Impresora 3D Ender 3 + 1kg de filamento"); 
+            } 
+            case 3 -> { 
+                precioProducto = 1750000; 
+                System.out.println("Impresora 3D Bambulab A1 + 4kg de filamento"); 
+            } 
+            case 4 -> { 
+                precioProducto = 6300000; 
+                System.out.println("Impresora 3D Bambulab H2d AMS + 4kg de filamento"); 
+            } 
+            case 5 -> { 
+                precioProducto = 600000; 
+                System.out.println("Impresora 3D Bambulab A1 mini + 1kg de filamento"); 
+            } 
+            case 6 -> { 
+                precioProducto = 240000; 
+                System.out.println("Filamento de impresion 3d x 10kg"); 
+            } 
+        }   
+    System.out.println(" ");
+} 
