@@ -157,5 +157,31 @@ public class PRINT3D {
             nuevoCosto = 6500;
              }
         }
+          if (nuevoCosto >= 0) { 
+        System.out.println("El costo de envío es de $" + nuevoCosto); 
+        costoDeEnvio = nuevoCosto; 
+        postal = true; 
+    } else { 
+        System.out.print("El código postal digitado no esta dentro de mendoza"); 
+        System.out.print("\nDigite un codigo postal valido "); 
+        String respuesta = scanner.next(); 
+        if (!respuesta.equalsIgnoreCase("S")) { 
+            System.out.println( 
+                    "Lo esperamos en nuestra tienda fisica para poder realizar la compra"); 
+            break; 
+        } 
+    } 
+} 
+if (postal) { 
+    System.out.println( 
+            "Genial!!, digite su calle, casa y detalles para poder hacerle llegar su envio"); 
+    System.out.print("Digite una direccion: "); 
+    direc = scanner.nextLine(); 
+    System.out.println("Ingresaste la direccion: " + direc); 
+    System.out.print("Sí se equivoco al ingresar hagalo nuevamente o presione enter"); 
+    direc = scanner.nextLine(); 
+} 
+ 
+return costoDeEnvio;
 }
 
