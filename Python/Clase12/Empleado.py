@@ -1,4 +1,3 @@
-class Empleado: # No hereda sino solo de la clase object
     def __init__(self, nombre, sueldo):
         self.nombre = nombre
         self.sueldo = sueldo
