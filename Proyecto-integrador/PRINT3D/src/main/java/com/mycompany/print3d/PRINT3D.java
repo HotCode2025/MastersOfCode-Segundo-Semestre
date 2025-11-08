@@ -255,7 +255,16 @@ if (precioProducto >= 0) {
 } 
 System.out.println(" "); 
  
-
+if (codigop) {
+System.out.println("A continuacion se le solicitara sus datos");
+System.out.print("Digite sus datos, nombre y apellido: ");
+nombre = scanner.nextLine();
+JOptionPane.showMessageDialog(null, "DATOS ingresados:\n " + nombre);
+JOptionPane.showMessageDialog(null, "MUCHAS GRACIAS " + nombre + "\nLe
+invitamos a continuar el proceso de PAGO");
+}
+return precio;
+}
 
 
 
