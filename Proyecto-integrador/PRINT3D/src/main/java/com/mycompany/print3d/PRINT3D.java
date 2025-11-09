@@ -199,8 +199,7 @@ return costoDeEnvio;
         matrizP.append("\n"); 
     } 
  
-    // Solicitamos el producto mediante el ciclo while para asignar el precio al 
-producto. 
+    // Solicitamos el producto mediante el ciclo while para asignar el precio al producto. 
      
     while (!codigop) { 
  
