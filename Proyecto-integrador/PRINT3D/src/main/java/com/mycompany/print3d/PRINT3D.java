@@ -238,5 +238,33 @@ return costoDeEnvio;
                 System.out.println("Filamento de impresion 3d x 10kg"); 
             } 
         }   
-    System.out.println(" ");
+    
+
+
+if (precioProducto >= 0) { 
+        System.out.println("El PRECIO del producto es de $" + precioProducto);         precio = precioProducto; 
+        codigop = true; 
+    } else { 
+        System.out.print("Producto no registrado, ingrese otro CÓDIGO"); 
+        System.out.print("\nDigite el numero para continuar con la compra: ");         String respuesta = scanner.next();         if (!respuesta.equalsIgnoreCase("S")) { 
+            System.out.println( 
+                    "Reingrese nuevamente el producto");             break; 
+        } 
+    } 
+} 
+System.out.println(" "); 
+ 
+if (codigop) {
+System.out.println("A continuacion se le solicitara sus datos");
+System.out.print("Digite sus datos, nombre y apellido: ");
+nombre = scanner.nextLine();
+JOptionPane.showMessageDialog(null, "DATOS ingresados:\n " + nombre);
+JOptionPane.showMessageDialog(null, "MUCHAS GRACIAS " + nombre + "\nLe
+invitamos a continuar el proceso de PAGO");
+}
+return precio;
+}
+
+
+
 } 
