@@ -1,6 +1,6 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
-import DatosPersonales from './components/datosPersonales.vue';
+import DatosPersonales from './components/DatosPersonales.vue';
 import Educacion from './icons/Educacion.vue';
 import InteresesComponente from './components/InteresesComponente.vue';
 </script>

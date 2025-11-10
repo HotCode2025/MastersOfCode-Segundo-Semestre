@@ -21,9 +21,9 @@ educacion.value = [
 
 <template>
     <ul>
-        <li v-for="{item, index} in educacion" :Key="index" :style="{'--fecha-color': fechaColor{index}.color}">
+        <li v-for="(item, index) in educacion" :key="index" :style="{'--fecha-color': fechaColor[index].color}">
             <div class="fecha">{{ item.fecha }}</div>
-            <div class="Title">{{ item.title }}</h3>
+            <div class="Title">{{ item.title }}</div>
             <div class="descripción">{{ item.descripcion }}</div>
             <!-- Aqui vemos con el uso de b-vid (:) que bindeamos el atributo herf de html con el item.enlace-->
             <a class="enlace":href="item.enlace" target="_blank">Saber más</a>
