@@ -49,7 +49,7 @@ import ExperiencieComponente from './components/ExperiencieComponente.vue';
   </main>
   <footer>
       <a href="#top">Inicio</a>
-      <p>  2024 Rafael Pacheco (los demas nombres)- Portafolio Web</p>
+      <p>  2025 Masters Of Code - Portafolio Grupal Web</p>
   </footer>
 </template>
 

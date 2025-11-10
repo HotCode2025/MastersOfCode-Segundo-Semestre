@@ -3,10 +3,10 @@ import { ref } from 'vue';
 import FondoLava from './FondoLava.vue';
 //Este es un arreglo con ref para que se pueda reactivar el cambio de los intereses
 const intereses = ref([
-    'Desarrollo de Software de Código Abierto: Contribuyo a proyectos en GitHub, colaborando con otros desarrolladores para mejorar herramientas y librerías populares.',
-    'Deportes al Aire Libre: Disfruto del senderismo y el ciclismo de montaña, actividades que practico regularmente para mantener un equilibrio entre el trabajo y la vida personal.',
-    'Tecnología de Innovación: Me apasiona explorar nuevas tendencias tecnológicas como la inteligencia artificial y el desarrollo de aplicaciones móviles.',
-    'Fotografía: Practico la fotografía como un hobby, lo que me ayuda a mantener una perspectiva creativa tanto en mi vida profesional como personal.'
+    'Desarrollo de Software de Código Abierto: Nos interesa contribuir a proyectos colaborativos en GitHub, participando en comunidades de desarrolladores y mejorando herramientas de uso libre.',
+    'Innovación Tecnológica: Nos apasiona explorar nuevas tendencias como la inteligencia artificial, el desarrollo móvil y la automatización, buscando aplicar estas tecnologías en proyectos reales.',
+    'Aprendizaje y Crecimiento Profesional: Valoramos el aprendizaje constante y la mejora continua, participando en cursos, desafíos de programación y proyectos académicos que fortalezcan nuestras habilidades.',
+    'Trabajo en Equipo y Creatividad: Creemos que la colaboración y la creatividad son esenciales para lograr soluciones efectivas y originales. Disfrutamos de trabajar juntos, compartir ideas y enfrentar nuevos retos.'
 ]);
 </script>
 
