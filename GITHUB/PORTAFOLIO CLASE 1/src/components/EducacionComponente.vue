@@ -2,18 +2,43 @@
 import { ref } from 'vue';
 const fechaColor = ref([])
 fechaColor.value = [
-    {color: '#41516c'},
-    {color: '#FBCA3E'},
-    {color: '#E24A68'},
-    {color: '#1B5F8C'},
-    {color: '#4CADAD'}
+    { color: '#1B3B5F' }, 
+    { color: '#3A7CA5' }, 
+    { color: '#5DA9E9' }, 
+    { color: '#82C0E8' }, 
+    { color: '#A3D2F2' }  
 ];
 const EducacionComponente = ref([
-  {fecha: '2024', title: 'Técnicatura Universitaria en Programacion', descripcion: 'Incumbencias Profesionales: Operación y programación de computadoras, desarrollo de programas en distintos lenguajes, análisis y control de sistemas informáticos.', enlace:'https://www.youtube.com/'},
-  {fecha: '2023', title: 'Desarrollador Full Stack', descripcion: 'Trabajé en XYZ Tech, donde diseñé y desarrollé aplicaciones web completas utilizando tecnologías como Node.js, React y MongoDB.', enlace:'http:www.direccion.com'},
-  {fecha: '2022', title: 'Internship en Desarrollo Web', descripcion: 'Realicé una pasantía en ABC Solutions, contribuyendo en la creación de interfaces de usuario y optimización de sitios web.', enlace:'http:www.direccion.com'},
-  {fecha: '2021', title: 'Proyecto Personal - Aplicación de Gestión de Tareas', descripcion: 'Desarrollé una aplicación para la gestión de tareas diarias usando HTML, CSS y JavaScript, implementando funcionalidades como listas de tareas y recordatorios.', enlace:'http:www.direccion.com'},
-  {fecha: '2020', title: 'Curso de Introducción a la Programación', descripcion: 'Completé un curso en línea sobre fundamentos de programación, donde aprendí lenguajes como Python y Java.', enlace:'http:www.direccion.com'}
+  {
+        fecha: "2025",
+        titulo: "Certificación en Desarrollo Web Avanzado",
+        descripcion: "El equipo completó una capacitación avanzada en tecnologías web modernas, incluyendo React, Vue.js y Node.js, reforzando buenas prácticas y desarrollo colaborativo.",
+        enlace: "ver más"
+    },
+    {
+        fecha: "2024",
+        titulo: "Tecnicatura en Programación - Miembros del Equipo",
+        descripcion: "Varios integrantes finalizaron la Tecnicatura Universitaria en Programación en la UTN - Facultad Regional San Rafael, adquiriendo competencias en análisis de sistemas, programación y bases de datos.",
+        enlace: "ver más"
+    },
+    {
+        fecha: "2023",
+        titulo: "Curso de UX/UI y Diseño de Interfaces",
+        descripcion: "El grupo realizó un curso especializado en diseño de interfaces y experiencia de usuario para mejorar la usabilidad y estética de los proyectos web que desarrollamos.",
+        enlace: "ver más"
+    },
+    {
+        fecha: "2022",
+        titulo: "Bootcamp Full Stack",
+        descripcion: "El equipo participó en un bootcamp intensivo de desarrollo Full Stack, trabajando con Node.js, Express, MongoDB, React y Vue.js para crear aplicaciones completas.",
+        enlace: "ver más"
+    },
+    {
+        fecha: "2021",
+        titulo: "Hackathons y Proyectos de Capacitación",
+        descripcion: "Participamos en hackathons y talleres de programación, aplicando conocimientos en proyectos prácticos, fortaleciendo la colaboración y resolución de problemas en equipo.",
+        enlace: "ver más"
+    }
 ]);
 </script>
 

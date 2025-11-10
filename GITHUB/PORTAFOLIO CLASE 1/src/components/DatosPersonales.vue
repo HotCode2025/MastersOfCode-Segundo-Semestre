@@ -29,22 +29,23 @@ const redesSociales = [
 <style scoped>
 h1 {
     font-size: 2.5rem;
-    color: #fff 
+    color: #bbd5f1; 
 }
 
 p {
     font-size:1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: rgb(125, 125, 134);
+    color: #5DA9E9;
 }
 
 .card{
-    background-color: rgb(28, 41, 52);
+    background-color: #293d7c;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     text-align: center;
+    color: #EAF2FA;
 }
 
 .container-lista {
@@ -58,25 +59,25 @@ p {
 
 .icon-redsocial {
     align-items: center;
-    background-color: aliceblue;
+    background-color: #EAF2FA;
     border-radius: 50%;
     padding: 2px;
     margin: 5px;
-    box-shadow: 0 0 5px rgba(251, 249, 249, 0.934);
+    box-shadow: 0 0 5px rgba(58, 124, 165, 0.6);
 }
 
 .icon-redsocial:hover {
-    background-color: rgb(28, 41, 52);
+    background-color: #1B3B5F;
     box-shadow: 0 0 5px rgba(251, 249, 249, 0.934) ;
 }
 h2{
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(216, 216, 219);
+    color: #EAF2FA;
 }
 h3{
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(125, 125, 134);
+    color: #5DA9E9;
 }
 </style>

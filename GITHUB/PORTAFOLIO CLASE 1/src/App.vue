@@ -23,13 +23,13 @@ import ProyectosComponentes from './components/ProyectosComponentes.vue';
             <h2>Nosotros</h2>
             <NosotrosComponente />
         </section>
-        <section id="educacion">
-            <h2>Educación - Cursos</h2>
+        <section id="capacitacion">
+            <h2>Capacitación</h2>
             <!--Componente Educación-->
             <EducacionComponente />
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2>Experiencia de Equipo</h2>
             <!--Componente Experiencia-->
             <ExperiencieComponente />
         </section>

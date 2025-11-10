@@ -14,10 +14,11 @@
 import { ref } from 'vue';
 const navegacion= ref([
     {id:1, nombre:'Nosotros', enlace:'#nosotros'},
-    {id:2, nombre:'Educacion', enlace:'#educacion'},
+    {id:2, nombre:'Capacitación', enlace:'#capacitación'},
     {id:3, nombre:'Experiencia', enlace:'#experiencia'},
     {id:4, nombre:'Proyectos', enlace:'#proyectos'},
     {id:5, nombre:'Habilidades', enlace:'#habilidades'},  
+    {id:6, nombre:'Intereses', enlace:'#intereses'},
 ])
 </script>
 
