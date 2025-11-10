@@ -1,21 +1,23 @@
 <template>
-   <nav class="navbar">
-      <div class="navbar-menu">
-        <ul>
-            <a v-for="nav in navegacion" :key="nav.nombre" :href="nav.enlace" class="nav-item" >{{nav.nombre}}</a>
-        </ul>
-      </div> 
-    </nav>   
+    <nav class="navbar">
+        <div class="navbar-menu">
+            <ul>
+                <li v-for="nav in navegacion" :key="nav.nombre">
+                    <a :href="nav.enlace" class="nav-item">{{nav.nombre}}</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-const navegacion =ref([
-    {id:1, nombre:'Nosotros', enlance:'#nosotros'},
-    {id:2, nombre:'EducacionComponente', enlance:'#EducacionComponente'},
-    {id:3, nombre:'Experiencia', enlance:'#experiencia'},
-    {id:4, nombre:'Proyectos', enlance:'#proyectos'},
-    {id:5, nombre:'Habilidades', enlance:'#habilidades'},  
+const navegacion= ref([
+    {id:1, nombre:'Nosotros', enlace:'#nosotros'},
+    {id:2, nombre:'Educacion', enlace:'#educacion'},
+    {id:3, nombre:'Experiencia', enlace:'#experiencia'},
+    {id:4, nombre:'Proyectos', enlace:'#proyectos'},
+    {id:5, nombre:'Habilidades', enlace:'#habilidades'},  
 ])
 </script>
 
@@ -36,8 +38,12 @@ const navegacion =ref([
   display: flex;
   justify-content: flex-end;
 }
-.nav-list {
-  list-style: none;
+.navbar-menu ul {
+    display: flex;         /* 1. Pone los <li> en línea horizontal */
+    flex-wrap: wrap;       /* 2. Permite que bajen de línea si no caben */
+    list-style: none;      /* 3. Quita los puntos de la lista */
+    padding: 0;            /* 4. ¡Quita el padding que causaba el error! */
+    margin: 0;             /* 5. Quita el margen por defecto */
 }
 
 a {
@@ -53,6 +59,10 @@ a {
 }
 a :hover{
   background-color: hsla(160, 100%, 37%, 0.2)
+}
+
+.nav-item:hover {
+    background-color: hsla(239, 35%, 55%, 0.432);
 }
 
 @media (max-width: 768px) {

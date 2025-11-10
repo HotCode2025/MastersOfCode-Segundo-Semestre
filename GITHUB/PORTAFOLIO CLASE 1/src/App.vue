@@ -23,7 +23,7 @@ import ExperiencieComponente from './components/ExperiencieComponente.vue';
   </header>
   <main>
       <!-- el estilo css de section se encuentra en base.css-->
-       <section id="nosotros">
+       <section id="Nosotros">
       <!--Componente Nosotros-->
       <h2>Nosotros</h2>
       <NosotrosComponente />
