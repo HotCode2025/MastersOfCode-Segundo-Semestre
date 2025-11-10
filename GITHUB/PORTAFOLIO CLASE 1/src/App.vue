@@ -1,10 +1,17 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
+
 import DatosPersonales from './components/DatosPersonales.vue';
-import Educacion from './icons/Educacion.vue';
+/// aca estaba el error, no habia NADA y NavBar seguia llamando la funcion, corran el codigo 
+//cuando hagan cambios asi para doble verificar
+//re-usenlo para el titulo o no se
+
+
+import EducacionComponente from './components/EducacionComponente.vue';
 import InteresesComponente from './components/InteresesComponente.vue';
 import HabilidadesComponente from './components/HabilidadesComponente.vue';
 import NosotrosComponente from './components/NosotrosComponente.vue';
+import ExperiencieComponente from './components/ExperiencieComponente.vue';
 </script>
 
 <template>
@@ -24,9 +31,10 @@ import NosotrosComponente from './components/NosotrosComponente.vue';
       <section id="educacion">
           <h2>Educacion - Cursos</h2>
           <!--Componente Educacion-->
-          <Educacion />
+          <EducacionComponente />
       </section>
       <section id="experiencia"><h2>Experiencia</h2></section>
+      <ExperiencieComponente />
       <section id="proyectos"><h2>Proyectos</h2></section>
       <section id="habilidades">
       <!--Componente Habilidades-->

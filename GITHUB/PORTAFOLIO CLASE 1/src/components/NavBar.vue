@@ -2,7 +2,7 @@
    <nav class="navbar">
       <div class="navbar-menu">
         <ul>
-            <a v-for="nav in navegacion" :key="nav.nombre" href="nav.enlace" class="nav-item" >{{nav.nombre}}</a>
+            <a v-for="nav in navegacion" :key="nav.nombre" :href="nav.enlace" class="nav-item" >{{nav.nombre}}</a>
         </ul>
       </div> 
     </nav>   
@@ -12,7 +12,7 @@
 import { ref } from 'vue';
 const navegacion =ref([
     {id:1, nombre:'Nosotros', enlance:'#nosotros'},
-    {id:2, nombre:'Educacion', enlance:'#educacion'},
+    {id:2, nombre:'EducacionComponente', enlance:'#EducacionComponente'},
     {id:3, nombre:'Experiencia', enlance:'#experiencia'},
     {id:4, nombre:'Proyectos', enlance:'#proyectos'},
     {id:5, nombre:'Habilidades', enlance:'#habilidades'},  

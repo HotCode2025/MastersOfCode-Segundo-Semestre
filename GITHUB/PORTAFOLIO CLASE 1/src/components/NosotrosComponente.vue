@@ -130,6 +130,7 @@ const integrantes = [
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+   color: #141d72;
 }
 
 .integrante {

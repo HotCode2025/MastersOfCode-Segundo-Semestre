@@ -1,27 +1,25 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import { ref } from 'vue';
 const fechaColor = ref([])
-fechaColor.vue =[
+fechaColor.value = [
     {color: '#41516c'},
     {color: '#FBCA3E'},
     {color: '#E24A68'},
     {color: '#1B5F8C'},
     {color: '#4CADAD'}
-]
-const educacion = ref([])
-educacion.value = [
-    {fecha: '2024', title: 'Tecnicatura Universitaria en Programación', descripcion: 'Incumbencias Profecionales: Operación y programación de computadoras, desarrollo de programas en distintos lenguajes, análisis y control de sistemas informaticos.', enlace:'http://www.youtube.com/'},
-    {fecha: '2023', title: 'Desarrollador Full Strack', descripcion: 'Trabajé en XYZ Tech, donde diseñe y desarrollé aplicaciones web completas utilizando tecnologias como Node.js, React y MongoDB.' enlace:'http:www.direccion.com'},
-    {fecha: '2022', title: 'Internship en Desasrrolo Web', descripcion: 'Realicé una pasantía en ABC Solution, contribuyendo en la creacion de interfaces de usuario y optimizacion de sitios web.', enlace: 'http:www.direccion.com'},
-    {fecha: '2021', title: 'Proyecto Personal - Aplicación de Gestión de Tareas', descripcion: 'Desarrollé una aplicación para la gestion de tareas diarias usando HTML, CSS y JavaScript, implementando funcionalidades como listas de tareas y recomendatorios.', enlace:'http:www.direccion.com'},
-    {fecha: '2020', title: 'Curso de Intrucción a la Programación', descripcion: 'Completé un curso en línea sobre fundamentos de programación , donde aprendí lenguajes como Python y Java.', enlace:'http:www.direccion.com'}
 ];
+const EducacionComponente = ref([
+  {fecha: '2024', title: 'Técnicatura Universitaria en Programacion', descripcion: 'Incumbencias Profesionales: Operación y programación de computadoras, desarrollo de programas en distintos lenguajes, análisis y control de sistemas informáticos.', enlace:'https://www.youtube.com/'},
+  {fecha: '2023', title: 'Desarrollador Full Stack', descripcion: 'Trabajé en XYZ Tech, donde diseñé y desarrollé aplicaciones web completas utilizando tecnologías como Node.js, React y MongoDB.', enlace:'http:www.direccion.com'},
+  {fecha: '2022', title: 'Internship en Desarrollo Web', descripcion: 'Realicé una pasantía en ABC Solutions, contribuyendo en la creación de interfaces de usuario y optimización de sitios web.', enlace:'http:www.direccion.com'},
+  {fecha: '2021', title: 'Proyecto Personal - Aplicación de Gestión de Tareas', descripcion: 'Desarrollé una aplicación para la gestión de tareas diarias usando HTML, CSS y JavaScript, implementando funcionalidades como listas de tareas y recordatorios.', enlace:'http:www.direccion.com'},
+  {fecha: '2020', title: 'Curso de Introducción a la Programación', descripcion: 'Completé un curso en línea sobre fundamentos de programación, donde aprendí lenguajes como Python y Java.', enlace:'http:www.direccion.com'}
+]);
 </script>
 
 <template>
     <ul>
-        <li v-for="(item, index) in educacion" :key="index" :style="{'--fecha-color': fechaColor[index].color}">
+        <li v-for="(item, index) in EducacionComponente" :key="index" :style="{'--fecha-color': fechaColor[index].color}">
             <div class="fecha">{{ item.fecha }}</div>
             <div class="Title">{{ item.title }}</div>
             <div class="descripción">{{ item.descripcion }}</div>
