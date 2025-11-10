@@ -2,7 +2,7 @@
 import github from '../assets/github_icon.svg';
 
 const title = 'Masters of Code';
-const descripcion = 'Tecnicatura Universitaria en Programación – UTN';
+const descripcion = 'Grupo de estudiantes de la Tecnicatura Universitaria en Programación - UTN';
 const residencia = 'San Rafael, Mendoza, Argentina';
 const presentacion = 'Les damos la bienvenida al portafolio de Masters of Code, un grupo de estudiantes dedicados al desarrollo de software y al aprendizaje constante en el mundo de la tecnología.';
 const redesSociales = [
@@ -12,29 +12,31 @@ const redesSociales = [
 
 <template>
 <section class="datos-personales">
-  <section class="datos-personales">
     <div class="card">
       <h1>{{ title }}</h1>
       <h2>{{ descripcion }}</h2>
       <p>{{ presentacion }}</p>
-      <u1 v-for="red in redesSociales" :key="red.id">
-        <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
-      </u1>
+      <ul class="container-lista">
+        <li v-for="red in redesSociales" :key="red.id">
+          <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
+        </li>
+      </ul>
       <h3>{{ residencia }}</h3>
-    </div>  
-    </section>   
+    </div>    
 </section>     
 </template>
 
 <style scoped>
 h1 {
     font-size: 2.5rem;
+    color: #fff 
 }
 
 p {
     font-size:1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: rgb(125, 125, 134);
 }
 
 .card{
@@ -67,8 +69,14 @@ p {
     background-color: rgb(28, 41, 52);
     box-shadow: 0 0 5px rgba(251, 249, 249, 0.934) ;
 }
+h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(216, 216, 219);
+}
 h3{
     font-size: 1.2rem;
     font-weight: 600;
+    color: rgb(125, 125, 134);
 }
 </style>
