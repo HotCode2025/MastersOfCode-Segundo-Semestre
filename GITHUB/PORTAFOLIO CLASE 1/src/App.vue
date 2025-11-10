@@ -3,6 +3,8 @@ import NavBar from './components/NavBar.vue';
 import DatosPersonales from './components/DatosPersonales.vue';
 import Educacion from './icons/Educacion.vue';
 import InteresesComponente from './components/InteresesComponente.vue';
+import HabilidadesComponente from './components/HabilidadesComponente.vue';
+import NosotrosComponente from './components/NosotrosComponente.vue';
 </script>
 
 <template>
@@ -14,6 +16,11 @@ import InteresesComponente from './components/InteresesComponente.vue';
   </header>
   <main>
       <!-- el estilo css de section se encuentra en base.css-->
+       <section id="nosotros">
+      <!--Componente Nosotros-->
+      <h2>Nosotros</h2>
+      <NosotrosComponente />
+    </section>
       <section id="educacion">
           <h2>Educacion - Cursos</h2>
           <!--Componente Educacion-->
@@ -21,7 +28,11 @@ import InteresesComponente from './components/InteresesComponente.vue';
       </section>
       <section id="experiencia"><h2>Experiencia</h2></section>
       <section id="proyectos"><h2>Proyectos</h2></section>
-      <section id="habilidades"><h2>Habilidades</h2></section>
+      <section id="habilidades">
+      <!--Componente Habilidades-->
+      <h2>Habilidades</h2>
+      <HabilidadesComponente />
+    </section>
       <section id="intereses">
           <!--Componente Intereses-->
           <h2>intereses</h2>
