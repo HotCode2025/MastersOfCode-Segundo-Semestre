@@ -25,7 +25,7 @@ const navegacion= ref([
 
 <style scoped>
 .navbar {
-  background-color: var(--vt-c-indigo);
+  background-color:  #293d7c;
   color: #fff;
   padding: 0.5rem 1rem;
   align-items: center;
@@ -48,7 +48,7 @@ const navegacion= ref([
 }
 
 a {
-  border: 1px solid;
+  border: 1px solid hsla(210, 70%, 50%, 0.3);
   border-color: hsla(100, 100%, 37%, 0.2);
   border-radius: 5px;
   /*elimina lo subrayado de elementos y elementos con clase "green"*/
@@ -57,13 +57,14 @@ a {
   transition: 0.4s;
   /*añade padding alrededor del contenido*/
   padding: 5px;
+  color: #D0E6FF;
 }
 a :hover{
-  background-color: hsla(160, 100%, 37%, 0.2)
+  background-color:hsla(210, 70%, 50%, 0.2);
 }
 
 .nav-item:hover {
-    background-color: hsla(239, 35%, 55%, 0.432);
+    background-color: hsla(250, 50%, 60%, 0.3);
 }
 
 @media (max-width: 768px) {
